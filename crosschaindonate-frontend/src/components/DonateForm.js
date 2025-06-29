@@ -4,8 +4,9 @@ import { useState } from "react";
 import { useAccount, useWalletClient } from "wagmi";
 import { ethers } from "ethers";
 import DonationArtifact from "../constants/DonationABI.json";
+import { DONATION_CONTRACT_ADDRESS } from "../constants/config";
 
-const DONATION_ADDRESS = "0xC05C9882d8Ac7DaCCeE4961265B11478713673C5";
+const DONATION_ADDRESS = DONATION_CONTRACT_ADDRESS;
 
 export default function DonateForm() {
   const { address } = useAccount();
