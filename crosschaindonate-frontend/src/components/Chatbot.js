@@ -1,13 +1,13 @@
 import { useState } from "react";
-import Eliza from "elizaos";
 
-const eliza = new Eliza({ apiKey: process.env.NEXT_PUBLIC_ELIZA_API_KEY });
+const ELIZA_AGENT_URL =
+  process.env.NEXT_PUBLIC_ELIZA_AGENT_URL || "http://localhost:3001";
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([
     {
       sender: "bot",
-      text: "Hi! Ask me about donation causes or how this works.",
+      text: "Hi! I'm your Donation Assistant. Ask me about causes, how this works, or donation impact.",
     },
   ]);
   const [input, setInput] = useState("");
@@ -15,22 +15,27 @@ export default function Chatbot() {
   const handleSend = async () => {
     if (!input) return;
 
-    const userMessage = { sender: "user", text: input };
-    setMessages([...messages, userMessage]);
+    const newMessages = [...messages, { sender: "user", text: input }];
+    setMessages(newMessages);
 
     const aiReply = await getAIResponse(input);
-    setMessages((prev) => [...prev, { sender: "bot", text: aiReply }]);
+    setMessages([...newMessages, { sender: "bot", text: aiReply }]);
 
     setInput("");
   };
 
   const getAIResponse = async (prompt) => {
     try {
-      const response = await eliza.chat({ prompt });
-      return response.reply || "I don't have an answer for that.";
+      const res = await fetch(`${ELIZA_AGENT_URL}/chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt }),
+      });
+      const data = await res.json();
+      return data.reply || "I'm not sure how to answer that.";
     } catch (err) {
       console.error(err);
-      return "Oops, AI agent is currently unavailable.";
+      return "ElizaOS is currently unavailable.";
     }
   };
 
@@ -53,8 +58,9 @@ export default function Chatbot() {
         <input
           className="border p-2 flex-1"
           value={input}
-          placeholder="Ask a question..."
+          placeholder="Ask me anything about donations..."
           onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && handleSend()}
         />
         <button
           className="bg-blue-500 text-white px-4 rounded"
