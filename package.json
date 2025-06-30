@@ -5,8 +5,11 @@
     "hardhat": "^2.25.0"
   },
   "dependencies": {
+    "@elizaos/cli": "^1.0.15",
     "@rainbow-me/rainbowkit": "^2.2.8",
     "dotenv": "^16.5.0",
+    "elizaos": "^0.25.6-alpha.1",
+    "openai": "^5.8.2",
     "viem": "^2.31.4",
     "wagmi": "^2.15.6"
   }
