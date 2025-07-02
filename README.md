@@ -141,45 +141,42 @@ npm install
 
 Create or update your .env.local file:
 
+```bash
 NEXT_PUBLIC_ELIZA_AGENT_URL=http://localhost:3001
 NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_walletconnect_project_id
+```
 
 Start your frontend:
 
+```bash
 npm run dev
-Open your application at:
-http://localhost:3000
+```
 
-✅ The frontend connects to your deployed Donation contracts
-✅ The AI Assistant connects to your local ElizaOS agent
-✅ Users can donate, see real-time history, and chat with the AI assistant
+Open your application at: http://localhost:3000
+
+✅ The frontend connects to your deployed Donation contracts<br />
+✅ The AI Assistant connects to your local ElizaOS agent<br />
+✅ Users can donate, see real-time history, and chat with the AI assistant<br />
 
 ## 🧩 Project Structure
 
-crosschaindonate-frontend/
-├── app/ # Next.js pages and layout
-├── components/ # Reusable UI components (Chatbot, DonateForm, DonationsList)
-├── constants/ # Contract ABIs and configuration files
-├── styles/ # Global CSS and optional Tailwind setup
+crosschaindonate-frontend/<br />
+├── app/ # Next.js pages and layout<br />
+├── components/ # Reusable UI components (Chatbot, DonateForm, DonationsList)<br />
+├── constants/ # Contract ABIs and configuration files<br />
+├── styles/ # Global CSS and optional Tailwind setup<br />
 
-elizaos-donation-agent/
-├── character.js # AI persona and assistant behavior definition
-├── config files # ElizaOS project setup and environment configscrosschaindonate-frontend/
-├── app/ # Next.js pages and layout
-├── components/ # Reusable UI components (Chatbot, DonateForm, DonationsList)
-├── constants/ # Contract ABIs and configuration files
-├── styles/ # Global CSS and optional Tailwind setup
-
-my-agent/
-├── character.js # AI persona and assistant behavior definition
-├── config files # ElizaOS project setup and environment configs
+<br />
+my-agent/<br />
+├── character.js # AI persona and assistant behavior definition<br />
+├── config files # ElizaOS project setup and environment configs<br />
 
 ## 🏁 Tracks Applied
 
-✅ Chainlink Grand Prize
-✅ Cross-Chain Solutions (CCIP)
-✅ ElizaOS AI Agent Track
-✅ Avalanche Track
+✅ Chainlink Grand Prize<br />
+✅ Cross-Chain Solutions (CCIP)<br />
+✅ ElizaOS AI Agent Track<br />
+✅ Avalanche Track<br />
 
 ## 🎉 Challenges & Learnings
 
@@ -201,7 +198,4 @@ my-agent/
 
 ## 💬 Questions? Contact
 
-**Athika Fatima**
-[LinkedIn](https://www.linkedin.com/in/athika-fatima/)
-[Email](mailto:athika.fxz@gmail.com)
-[Project Repository](https://github.com/athikaf/chromion-hackathon)
+**Please feel free to reach out to** [Athika Fatima] (https://www.linkedin.com/in/athika-fatima/) or hit me up on [Email](mailto:athika.fxz@gmail.com)!
