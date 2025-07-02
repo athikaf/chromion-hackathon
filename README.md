@@ -21,7 +21,9 @@ The platform enables users to donate directly on Avalanche or send funds from su
 ⚠️ **Note to Organizers:**  
 We originally uploaded our demo video to YouTube; however, it appears to have been taken down unexpectedly due to reasons beyond our control (possibly automated flagging, copyright filters, or other unknown platform restrictions).
 
-We sincerely apologize for this inconvenience, Here's the reuploaded link:
+We sincerely apologize for this inconvenience,
+
+Here's the reuploaded link:
 
 Thank you for your understanding and consideration!
 
@@ -39,15 +41,15 @@ Thank you for your understanding and consideration!
 
 ## 🏗️ Architecture
 
-Frontend (Next.js + Wagmi + RainbowKit)
-│
-├── AI Chatbot (ElizaOS agent runs separately)
-│
-├── Donation Contract (Avalanche Fuji)
-│
-└── CCIP Receiver Contract (Avalanche Fuji)
-↳ Accepts cross-chain tokens
-↳ Forwards funds to Donation Contract
+Frontend (Next.js + Wagmi + RainbowKit) <br />
+│<br />
+├── AI Chatbot (ElizaOS agent runs separately)<br />
+│<br />
+├── Donation Contract (Avalanche Fuji)<br />
+│<br />
+└── CCIP Receiver Contract (Avalanche Fuji)<br />
+↳ Accepts cross-chain tokens<br />
+↳ Forwards funds to Donation Contract<br />
 
 ---
 
