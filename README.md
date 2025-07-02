@@ -80,24 +80,16 @@ Frontend (Next.js + Wagmi + RainbowKit) <br />
 
 ---
 
-## 🔧 Setup & Run Locally
-
-### 1️⃣ Clone the Repositories
-
-git clone https://github.com/athikaf/chromion-hackathon.git
-
----
-
 ## ⚙️ Technologies Used
 
-✅ Avalanche Fuji Testnet — Smart contract deployment
-✅ Chainlink CCIP — Cross-chain token transfer infrastructure
-✅ ElizaOS — AI agent for user guidance
-✅ Next.js — Modern, responsive frontend
-✅ RainbowKit + Wagmi — Wallet connection
-✅ Ethers.js — Blockchain interactions
-✅ Hardhat — Smart contract development and deployment
-✅ Tailwind CSS — Sleek, responsive UI styling
+✅ Avalanche Fuji Testnet — Smart contract deployment <br />
+✅ Chainlink CCIP — Cross-chain token transfer infrastructure <br />
+✅ ElizaOS — AI agent for user guidance<br />
+✅ Next.js — Modern, responsive frontend<br />
+✅ RainbowKit + Wagmi — Wallet connection<br />
+✅ Ethers.js — Blockchain interactions<br />
+✅ Hardhat — Smart contract development and deployment<br />
+✅ Tailwind CSS — Sleek, responsive UI styling<br />
 
 ---
 
@@ -119,9 +111,7 @@ git clone https://github.com/athikaf/chromion-hackathon.git
 
 ### 1️⃣ Clone the Repositories
 
-````bash
-git clone https://github.com/your-repo/crosschaindonate-frontend.git
-git clone https://github.com/your-repo/elizaos-donation-agent.git
+git clone https://github.com/athikaf/chromion-hackathon.git
 
 ### 2️⃣ Smart Contracts
 
@@ -130,6 +120,7 @@ cd your-contract-project
 npm install
 npx hardhat compile
 npx hardhat run scripts/deploy.js --network fuji
+```
 
 ✅ Save your deployed contract addresses (Donation Contract + CCIP Receiver Contract)
 
@@ -139,12 +130,14 @@ npx hardhat run scripts/deploy.js --network fuji
 cd elizaos-donation-agent
 bun install -g @elizaos/cli
 elizaos start
+```
 
 ### 4️⃣ Frontend Setup
 
 ```bash
 cd crosschaindonate-frontend
 npm install
+```
 
 Create or update your .env.local file:
 
@@ -212,4 +205,3 @@ my-agent/
 [LinkedIn](https://www.linkedin.com/in/athika-fatima/)
 [Email](mailto:athika.fxz@gmail.com)
 [Project Repository](https://github.com/athikaf/chromion-hackathon)
-````
