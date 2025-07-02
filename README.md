@@ -84,9 +84,7 @@ Frontend (Next.js + Wagmi + RainbowKit) <br />
 
 ### 1️⃣ Clone the Repositories
 
-````bash
-git clone https://github.com/your-repo/crosschaindonate-frontend.git
-git clone https://github.com/your-repo/elizaos-donation-agent.git
+git clone https://github.com/athikaf/chromion-hackathon.git
 
 ---
 
@@ -121,7 +119,7 @@ git clone https://github.com/your-repo/elizaos-donation-agent.git
 
 ### 1️⃣ Clone the Repositories
 
-```bash
+````bash
 git clone https://github.com/your-repo/crosschaindonate-frontend.git
 git clone https://github.com/your-repo/elizaos-donation-agent.git
 
